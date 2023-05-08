@@ -20,6 +20,28 @@
             padding: 8px;
             text-align: left;
         }
+        
+        body {
+           font-family: Arial, sans-serif;
+           margin: 0;
+           padding: 0;
+        }
+
+    .container {
+      display: flex;
+    }
+
+    .left-column {
+      flex-basis: 70%;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+    .right-column {
+      flex-basis: 30%;
+      background-color: #e6e6e6;
+      padding: 20px;
+    }
 </style>
 
 </head>
@@ -31,7 +53,9 @@
   <b><center>Crypto with Canetti: May 13, 2023 at Boston University</center></b></h2>
   </div>
 
-  <table style="border:1px solid black;margin-left:auto;margin-right:auto;">
+  <div class="container">
+    <div class="left-column">
+      <table style="border:1px solid black;margin-left:auto;margin-right:auto;">
         <tbody>
             <tr>
                 <td><b>9:30-10</b></td>
@@ -66,14 +90,12 @@
             </tr>
         </tbody>
   </table>
-          
-  <div class="container">
-  	<center><img src="canetti.png" height="700"></center>
   </div>
-
+  <div class="right-column">
+      <center><img src="canetti.png" height="700"></center>
+  </div>
+  </div>
   
-
-</div>
-
+  </div>
   </body>
   </html>
